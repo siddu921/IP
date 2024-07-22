@@ -1,0 +1,71 @@
+<html>
+    <head><title>Project</title>
+        <style>
+            *{
+                padding: 0%;
+                margin: 0%;
+            }
+            #box{
+                height:100vh;
+                width:100vb;
+                margin-left:28%;
+                align-content: center;           
+            }
+            #booking{
+                padding:25px;
+                margin: auto;
+                border: 3px solid ;
+                width: 40%;
+                border-radius: 5px;
+                background-color: antiquewhite;
+            
+            }
+            input{
+                color: darkcyan;
+            padding:2px;
+            border-radius: 3px;
+            border: 2px solid black;
+            }
+        </style>
+</head>
+    <body style="background-image: url('https://res.cloudinary.com/drzpqnk6m/image/upload/v1721633140/blue-bus_iqenru.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;">
+        <center><h1>Online Bus Reservation</h1></center>
+        <main>
+            <section id="form">
+                <div id="box">
+                    <div id="booking">
+                        <form action="#" method="post" onsubmit="return validate_form()">
+                            <input type="text" id="name" placeholder="Name">
+                                <span id="name_error"></span> <br> <br>
+                            <input type="text" id="age" placeholder="Age">
+                                <span id="age_error"></span> <br> <br>
+                                <h3>Date Of Journey</h3> <br> 
+                            <input type="date" placeholder="Date of Journey"> <br> <br>
+                            <select name="From" id="From">
+                                <option value="" selected>From</option>
+                                <option value="Chennai">Chennai</option>
+                                <option value="Kadapa">Kadapa</option>
+                                <option value="Ananthapuram">Ananthapuram</option>
+                                <option value="Ongole">Ongole</option>
+                            </select> <br> <br>
+                            <select name="TO" id="To">
+                                <option value="" selected>To</option>
+                                <option value="Chennai">Chennai</option>
+                                <option value="Kadapa">Kadapa</option>
+                                <option value="Ananthapuram">Ananthapuram</option>
+                                <option value="Ongole">Ongole</option>
+                            </select>
+                            <br> <br>
+                            <input type="submit" value="Submit">
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <script>
+
+        </script>
+    </body>
+</html>
